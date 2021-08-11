@@ -18,7 +18,8 @@ cd build_tar
 apt-get download google-chrome-stable
 apt-get download endpoint-verification
 
-mkdir -p custom/chrome
+#mkdir -p custom/chrome
+mkdir -p custom/chrome/etc/opt/chrome/policies/managed/
 
 dpkg -x google* custom/chrome
 dpkg -x endpoint* custom/chrome
@@ -34,6 +35,9 @@ mkdir -p custom/chrome/lib/systemd/system
 mv custom/target/chrome_cp_apparmor_reload custom/chrome/config/bin
 mv custom/target/igel-chrome-cp-apparmor-reload.service custom/chrome/lib/systemd/system/
 mv custom/target/chrome-cp-init-script.sh custom
+
+https://raw.githubusercontent.com/alfwro13/IGEL-Custom-Partitions/02a0247675f10b5fe09d294f2dbdfda58a08cb75/CP_Source/Browsers/Google_Chrome/policy.json
+mv policy.json custom/chrome/etc/opt/chrome/policies/managed/
 
 cd custom
 
