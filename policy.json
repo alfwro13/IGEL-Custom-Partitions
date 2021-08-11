@@ -1,0 +1,6 @@
+{
+    "AllowFileSelectionDialogs": false,
+    "URLBlocklist": [
+        "file://"
+    ]
+}
