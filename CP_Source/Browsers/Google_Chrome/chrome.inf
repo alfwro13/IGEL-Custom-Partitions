@@ -1,7 +1,7 @@
 [INFO]
 [PART]
 file="chrome.tar.bz2"
-version="87.0.4280.88"
-size="600M"
+version="92.0.4515.131"
+size="2G"
 name="chrome"
 minfw="11.04.200"
